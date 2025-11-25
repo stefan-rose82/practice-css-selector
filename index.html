@@ -2,20 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Scraping Practice</title>
+    <title>Practice CSS Selectors & rvest</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+        h1 { color: #333; }
+        .question { background: #eef; padding: 10px; border-left: 4px solid #3366cc; margin: 25px 0 10px 0; }
+        .section-title { margin-top: 40px; }
+    </style>
 </head>
 <body>
 
-<h2>Simple scraping page</h2>
+<h1>CSS Selector & rvest – Übungsseite</h1>
+<p>Hier stehen die Fragen direkt über dem dazugehörigen HTML-Element.</p>
+
+<hr>
+
+<!-- -------------------------------------------------- -->
+<!-- Frage 1 -->
+<div class="question">
+    <strong>Frage 1:</strong> Hole den Text des Elements mit der ID <code>#dog</code>.
+</div>
 
 <div id="dog">This is the dog</div>
+
+<!-- -------------------------------------------------- -->
+<!-- Frage 2 -->
+<div class="question">
+    <strong>Frage 2:</strong> Hole alle Texte der Elemente mit der Klasse <code>.cow</code>.
+</div>
 
 <div class="cow">Cow number 1</div>
 <div class="cow">Cow number 2</div>
 
+<!-- -------------------------------------------------- -->
+<!-- Frage 3 -->
+<div class="question">
+    <strong>Frage 3:</strong> Hole nur die Texte der Elemente mit der Klasse <code>.cow</code>
+    innerhalb des Divs mit der Klasse <code>.farm</code>.
+</div>
+
 <div class="farm">
     <div class="cow">Farm cow A</div>
     <div class="cow">Farm cow B</div>
+</div>
+
+<!-- -------------------------------------------------- -->
+<!-- Frage 4 -->
+<div class="question">
+    <strong>Frage 4:</strong> Hole die Liste aller Tiere (li) im Div mit der Klasse <code>.zoo</code>.
+</div>
+
+<!-- Frage 5 steht über dem ersten Div in .zoo -->
+<div class="question">
+    <strong>Frage 5:</strong> Hole den Text des ersten <code>div</code>-Elements in <code>.zoo</code>.
+</div>
+
+<!-- Frage 6 steht über dem letzten Div in .zoo -->
+<div class="question">
+    <strong>Frage 6:</strong> Hole den Text des letzten <code>div</code>-Elements in <code>.zoo</code>.
 </div>
 
 <div class="zoo">
@@ -31,7 +75,17 @@
     <div>This is the text for question 6</div>
 </div>
 
+<!-- -------------------------------------------------- -->
+<!-- Frage 7 -->
+<div class="question">
+    <strong>Frage 7:</strong> Hole den Text des Divs mit dem Attribut <code>data-my-id="goat"</code>.
+</div>
+
 <div data-my-id="goat">This is the goat</div>
+
+<hr>
+
+<p>Viel Erfolg beim Üben! 😊</p>
 
 </body>
 </html>
