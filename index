@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scraping Practice</title>
+</head>
+<body>
+
+<h2>Simple scraping page</h2>
+
+<div id="dog">This is the dog</div>
+
+<div class="cow">Cow number 1</div>
+<div class="cow">Cow number 2</div>
+
+<div class="farm">
+    <div class="cow">Farm cow A</div>
+    <div class="cow">Farm cow B</div>
+</div>
+
+<div class="zoo">
+    <div>This is the text for question 5</div>
+
+    <ul>
+        <li>Elephant</li>
+        <li>Lion</li>
+        <li>Zebra</li>
+        <li>Monkey</li>
+    </ul>
+
+    <div>This is the text for question 6</div>
+</div>
+
+<div data-my-id="goat">This is the goat</div>
+
+</body>
+</html>
